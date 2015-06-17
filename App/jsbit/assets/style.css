@@ -1,0 +1,311 @@
+/*
+
+		José María Campaña Rojas
+		Blocks Stylesheet
+		rev: 20 oct 2014
+
+*/
+
+main_interface * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+* {
+    -webkit-touch-callout: none;
+}
+@font-face {
+    font-family: 'chalet';
+    src: url('fonts/chalet_paris/chalet_paris_nineteen_sixty-webfont.eot');
+    src: url('fonts/chalet_paris/chalet_paris_nineteen_sixty-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/chalet_paris/chalet_paris_nineteen_sixty-webfont.woff') format('woff'), url('fonts/chalet_paris/chalet_paris_nineteen_sixty-webfont.ttf') format('truetype'), url('fonts/chalet_paris/chalet_paris_nineteen_sixty-webfont.svg#chaletparisnineteensixty') format('svg');
+}
+html {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+body {
+    background-color: #fff;
+}
+/* @group Konashi */
+
+/*
+
+	Estilo del bloque de popup de konashi
+
+*/
+
+#konashi {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#konashi_blocker {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(img/dialogbackground.png);
+    opacity: 1;
+    background-size: 100%;
+    z-index: 99;
+}
+#konashi_utils {
+    background: #ffffff;
+    z-index: 100;
+    border: 1px solid #035887;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 250px;
+    color: #001018;
+    box-shadow: 0 0 1px #2c2c2c;
+}
+/* @end */
+
+#main_interface {
+    position: absolute;
+    height: 1024px;
+    width: 768px;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 0;
+}
+#konashi_log {
+    height: 20px;
+    width: 490px;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #91d6fc;
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+#klog {
+    display: block;
+    width: 688px;
+    margin-top: -24px;
+    height: 20px;
+    margin-left: 75px;
+    font-size: 13px;
+    line-height: 22px;
+    overflow: hidden;
+}
+#header {
+    width: 150px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 22px;
+    font-weight: bold;
+    /* background-color: #0581c5; */
+    padding: 20px 5px 5px;
+    text-align: left;
+    color: #000000;
+    height: 20px;
+}
+#leftArea {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 508px;
+    height: 978px;
+    overflow: hidden;
+}
+#code_editor {
+    height: 770px; /* antes 800 */
+    font-family: "Courier New", Courier, mono;
+}
+#blockArea {
+    position: absolute;
+    top: 0px;
+    left: 570px;
+    width: 205px;
+    height: 1014px;
+    padding-bottom: 10px;
+}
+#console {
+    overflow: hidden;
+    height: 110px;
+    margin-top: 45px;
+}
+#console_head {
+    border-bottom: 1px solid #91d6fc;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#console_log_contents {
+    background: #ffffff;
+    width: 490px;
+    height: 75px;
+    padding: 5px;
+    overflow: hidden;
+    font: 13px/14px"Courier New", Courier, mono;
+}
+.log_line {
+    border-right: 1px solid #aeaeae;
+    padding-right: 5px;
+    margin-right: 5px;
+    color: #525252;
+    width: 25px;
+    text-align: right;
+    display: inline-block;
+}
+.var {
+    color: purple;
+}
+.if {
+    color: #241387;
+}
+.indent {
+    background: red;
+width: 20px;
+display: inline-block;
+z-index: 1;
+position: relative;
+}
+#code_editor div {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+#title {
+    border-bottom: 1px solid #91d6fc;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/* @group Interface */
+
+/* Descripción de los elementos de la interfaz de la app */
+
+body {
+    font-family: chalet, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.dialog_title {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.button {
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #b7b7ba;
+    padding: 8px;
+    margin: 5px;
+    background-color: #eaeaea;
+    color: #3a3a3a;
+    cursor: default;
+    font-size: 18px;
+}
+.textfield {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #bab7b7;
+    display: block;
+    padding: 5px;
+    font: 16px chalet;
+    height: 20px;
+    margin: 5px auto;
+    min-width: 100px;
+    text-align: left;
+}
+/* @end */
+
+.block {
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: solid 1px #fff;
+    margin-bottom: 5px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+
+#line_svg {
+    position: absolute;
+    width: 65px;
+    height: 1024px;
+    z-index: 1;
+    top: 0px;
+    right: 195px;
+}
+#controls {
+    position: absolute;
+    bottom: 125px;
+    left: 0px;
+    z-index: 1;
+}
+
+
+
+#run {
+    background-color: #b7b7ba;
+    color: white;
+    font-weight: bold;
+}
+
+
+#warning {
+    background: #ffffff;
+    z-index: 900;
+    border: 1px solid #035887;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-top: 250px;
+    color: #001018;
+    box-shadow: 0 0 1px #2c2c2c;
+}
+#warning p {
+    margin: 0px;
+}
+.wtitle {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}

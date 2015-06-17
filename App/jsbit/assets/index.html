@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="js/jquery.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/svg.js"></script>
+    
+    <meta name="format-detection" content="telephone=no">
+
+    
+</head>
+<body>
+
+
+<!-- Warning -->
+
+<div id="warning">
+
+    <p>
+        <span class="wtitle"> Warning </span>
+        
+        This application is a prototype. <br />
+        Please take care of the following on order to prevent damage to the js.bit device:
+        
+        <ul>
+        
+            <li>Do not connect a variable with another variable by its top connectors (with a jumper wire), it could short the circuit and it is not short protected.
+                
+           <li>The RESET button resets the state of the blocks to its defaults.</li>
+            
+        
+        </ul>
+        
+        If the blocks do not seem to work correctly, try the following:
+        
+        <ul>
+            
+            <li> Pressing the BLE Refresh button. It refreshes the comunication with the main block and with every block. </li>
+            <li> Disconnect the cable on top of the iPad mount and reconnect it. </li>
+            <li> If nothing seems to work, disconnect the main block from the electricity and re connect it, also restart the application on the iPad by pressing two times the home button and slide it to the top. </li>
+        
+        </ul>
+        
+        <a id="btn-gotit" class="button">Got it!</a>
+        
+    </p>
+
+</div>
+
+
+<!-- Konashi connect dialog -->
+<div id="konashi">
+  <div id="konashi_utils">
+  <span class="dialog_title">{ js.bit }</span>
+      <div id="konashi_connect">
+      	<div id="connect_dialog_order" class="text">js.bit needs to connect to the main block.<br /> <br /> Please type the block id and press connect.</div>
+      	<div id="connect_dialog_connecting" class="text">
+	    <img id="konashi_connect_loading_indicator" src="img/loading.gif" width="50" height="50" alt="loading"> </div>
+           <input id="input_konashi_name" class="textfield" type="text" value="4-0942" size="6" maxlength="12">
+        <a id="btn-find" class="button">connect</a>
+      </div>
+  </div>
+  <div id="konashi_blocker"></div>
+</div>
+    
+<!-- Main interface -->
+<div id="main_interface">
+
+    <div id="line_svg"></div>
+    
+    <div id="controls">
+        <div id="reset" class="button">Reset</div>
+        <div id="blrefresh" class="button">BLE Refresh</div>
+    </div>
+    
+    <!-- header -->
+    <div id="header">
+    	js.bit
+    </div>
+    
+    <!-- menu area -->
+    <div id="leftArea">
+    	
+        <div id="title">Source Code</div>
+        
+    	<!-- code editor -->
+    	<div id="code_editor"></div>
+        
+        <!-- run button -->
+        <div id="run" class="button">Run code</div>
+    	
+    	<!-- Console -->
+    	<div id="console">
+    		<div id="console_head"> js.bit Log </div>
+    		<div id="console_log_contents">
+                <div id="console_log_contents_logs">
+                </div>
+    		</div>
+    	</div>
+    	
+    	<!-- MainBlock status bar -->
+    	<div id="konashi_log">
+    		<span>MainBlock: </span>
+    		<span id="klog"></span>
+    	</div>
+    	
+    </div>
+    
+    <div id="blockArea">
+    	
+    </div>
+</div>
+<script src="js/konashi-bridge.js"></script> 
+<script src="app.js"></script>
+<script src="blocks/blocks.js"></script>
+<script src="blocks/variables.js"></script>
+<script src="blocks/freeInput.js"></script>
+<script src="blocks/blocks_conditional.js"></script>
+<script src="blocks/lightbox.js"></script>
+<script src="blocks/log.js"></script>
+<script src="blocks/motorbox.js"></script>
+<script src="blocks/loop.js"></script>
+<script src="blocks/operators.js"></script>
+<script>
+    $(document).ready(function () {
+        setup();
+    });
+</script>
+</body>
+</html>
