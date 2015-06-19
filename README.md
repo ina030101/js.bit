@@ -17,11 +17,12 @@ js.bit was tested with the targeted designers, and it showed that they were able
 ##Licence
 
 José María Campaña Rojas
-design by chemisax
 
 work url: http://jsbit.cc .
 developer url: www.chemisax.com .
 contact: jsbit@chemisax.com
+
+developed at IAMAS http://iamas.ac.jp
 
 Other libraries js.bit is using:
 
