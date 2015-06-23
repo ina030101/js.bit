@@ -19,7 +19,7 @@ To burn the firmware on the js.bit blocks a writer device must be created, the c
 The first part of the folder name represents the Hexadecimal number for the I2C ID of each block, then an underscore and the block name.
 
 ##Comments
-The code is very buggy a dormir most part of ir si uncommented, so this repository is just for reference and demonstation use only.
+The code is very buggy and most part of it is uncommented, so this repository is just for reference and demonstation use only.
 You can download it, modify it fork it or do whatever you want.
 If you make something using this repository I'll be very glad if you could make me know about it!
 And please, don't forget to keep the link to the author.
