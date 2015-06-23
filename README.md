@@ -25,10 +25,11 @@ If you make something using this repository I'll be very glad if you could make 
 And please, don't forget to keep the link to the author.
 
 ##Licence
-js.bit release 1
+js.bit 0.8
 José María Campaña Rojas
 
-[http://jsbit.cc]
+[http://jsbit.cc](http://jsbit.cc)
+
 developed by [design by chemisax](http://chemisax.com) @ [Institute of Advanced Media Arts and Sciences](http://iamas.ac.jp)
 Main contact: [chemisax@chemisax.com](mailto:chemisax@chemisax.com?Subject=js.bit%20github%20contact%20fom)
 
@@ -36,7 +37,7 @@ Main contact: [chemisax@chemisax.com](mailto:chemisax@chemisax.com?Subject=js.bi
 
 Other libraries js.bit uses:
 * [TinyWire](https://github.com/rambo/TinyWire)
-* [Konashi-js-sdk](https://github.com/YUKAI/konashi-js-sdk)
 * [Arduino](http://www.arduino.cc) 
+* [Konashi-js-sdk](https://github.com/YUKAI/konashi-js-sdk)
 * [jQuery](https://jquery.com)
 * [svg.js](https://github.com/wout/svg.js)
