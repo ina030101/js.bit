@@ -13,13 +13,16 @@ The software of js.bit (the xcode project) is located under the App folder.
 The main javascript application is located on that folder's assets directory.
 
 ##Firmware
-The software to be burned in the Atmega chips can be found in the Arduino Folder of this repository. 
+The software to be burned in the Atmega chips can be found in the Arduino Folder of this repository. js.bit uses two kinds of chips, the ATMEGA 328 and the ATTiny 85 depending on the block size. ATTiny just allows for one input/output using the js.bit configuration. It makes use of the TinyWire library on the ATTiny and Wire on Arduino.
+
+To burn the firmware on the js.bit blocks a writer device must be created, the circuit diagram will be posted here soon.
+
 The first part of the folder name represents the Hexadecimal number for the I2C ID of each block, then an underscore and the block name.
 
 ##Comments
-The code is very buggy, so this repository is just for reference use only.
+The code is very buggy a dormir most part of ir si uncommented, so this repository is just for reference and demonstation use only.
 You can download it, modify it fork it or do whatever you want.
-If you make something using this repository I'll be very glad if you could make me know it!
+If you make something using this repository I'll be very glad if you could make me know about it!
 And please, don't forget to keep the link to the author.
 
 ##Licence
@@ -33,7 +36,8 @@ contact: [chemisax@chemisax.com](mailto:chemisax@chemisax.com?Subject=js.bit%20g
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">js.bit</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://chemisax.com" property="cc:attributionName" rel="cc:attributionURL">José María Campaña Rojas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://jsbit.cc" rel="dct:source">http://jsbit.cc</a>.
 
 Other libraries js.bit uses:
-
+* TinyWire
+* Wire
 * [Konashi-js-sdk](https://github.com/YUKAI/konashi-js-sdk)
 * [Arduino](http://www.arduino.cc) 
 * [jQuery](https://jquery.com)
