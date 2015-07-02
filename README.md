@@ -1,4 +1,4 @@
-![js.bit](http://jsbit.cc/github/jsbit.github.header.jpg)
+![js.bit header](http://jsbit.cc/github/jsbit.github.header.jpg)
 
 # js.bit, a device to study javascript by connecting blocks
 
